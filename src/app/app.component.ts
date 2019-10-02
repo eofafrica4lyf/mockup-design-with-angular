@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  openMenu = false;
-  toggleHeader = () => {
-    this.openMenu = !this.openMenu;
-    console.log(this.openMenu);
-
-  }
 
 }

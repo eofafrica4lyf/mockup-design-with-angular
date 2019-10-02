@@ -9,7 +9,6 @@ export class TopNavComponent implements OnInit {
   openMenu = false;
   toggleHeader = () => {
     this.openMenu = !this.openMenu;
-    console.log(this.openMenu);
   }
   constructor() {}
 

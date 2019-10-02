@@ -1,4 +1,100 @@
-<p>order-nav works!</p>
-<div class="order-nav">
+<style scoped>
+  .horizontal-collapse {
+    height: 70px;
+  }
 
+  .navbar-collapse.in {
+    overflow-y: hidden;
+  }
+
+  .order-nav {
+    background-color: #f8f8f8;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .order-nav {
+    height: 85px;
+    box-shadow: #00000029 0px 3px 6px;
+  }
+
+  .navbar {
+    width: 1200px;
+    margin: auto;
+    border: none;
+    border-radius: 0px;
+  }
+
+  ul.nav {
+    width: 100%;
+  }
+
+  .navbar li a {
+    color: #676768;
+    font-family: 'Montserrat';
+  }
+
+  .left {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .active a {
+    color: #5C0426;
+    padding: 0px 0px 3px 0px;
+    margin: 15px;
+    border-bottom: #5C0426 solid 2px;
+    background: #f8f8f8 !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .order-nav {
+      height: 50px;
+    }
+
+    .active {
+      margin-top: -5px;
+    }
+
+    .left {
+      float: none;
+      margin-right: 5px;
+    }
+
+    .right {
+      float: none;
+    }
+
+    .active a {
+      border-bottom: none;
+      margin: 0px;
+      padding: 10px 15px;
+    }
+  }
+</style>
+<div class="order-nav" ng-controller="CollapseDemoCtrl">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" (click)="toggleHeader()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed" [ngClass]="{'show': openMenu}"
+      (click)="toggleHeader()">
+      <ul class="nav navbar-nav">
+        <li class="left active"><a href="#">Home</a></li>
+        <li class="left"><a href="#">Payment Methods</a></li>
+        <li class="left"><a href="#">My Orders</a></li>
+        <li class="right"><a href="#">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
 </div>

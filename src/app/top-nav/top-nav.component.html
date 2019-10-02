@@ -1,4 +1,4 @@
-<style>
+<style scoped>
   @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
 
   .horizontal-collapse {
@@ -7,6 +7,10 @@
 
   .navbar-collapse.in {
     overflow-y: hidden;
+  }
+
+  .collapse {
+    float: right;
   }
 
   .top-nav {
@@ -28,7 +32,8 @@
     padding: 0px;
     color: white;
     font-weight: 900;
-    margin-right: 1em;
+    margin-left: -20px;
+    margin-right: 60px;
   }
 
   .navbar {
@@ -66,6 +71,9 @@
     .navbar-default {
       width: 100%;
       margin: auto 10px;
+    }
+    .navbar-collapse{
+      float: none;
     }
   }
 </style>

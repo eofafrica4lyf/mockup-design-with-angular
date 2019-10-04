@@ -3,7 +3,6 @@
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
@@ -64,7 +63,6 @@
     <div class="star-rating">
       <div>
         <star-rating value="3" checkedcolor="gold" uncheckedcolor="black" size="18px" readonly="false"
-          (rate)="onRate($event)">
         </star-rating>
       </div>
       <span>(30)</span>

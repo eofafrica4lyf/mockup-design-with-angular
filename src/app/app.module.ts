@@ -14,6 +14,7 @@ import { RestaurantCardComponent } from './restaurant-card/restaurant-card.compo
 import { RecommendedRestaurantComponent } from './recommended-restaurant/recommended-restaurant.component'
 
 import { RatingModule } from 'ng-starrating';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RatingModule } from 'ng-starrating';
     SearchHeaderComponent,
     IntroAfterHeaderComponent,
     RestaurantCardComponent,
-    RecommendedRestaurantComponent
+    RecommendedRestaurantComponent,
+    HowItWorksComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule, AngularSvgIconModule,RatingModule],
   providers: [],

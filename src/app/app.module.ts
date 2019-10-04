@@ -18,6 +18,7 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { PopularRestaurantsComponent } from './popular-restaurants/popular-restaurants.component';
 import { DownloadOurAppComponent } from './download-our-app/download-our-app.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     HowItWorksComponent,
     PopularRestaurantsComponent,
     DownloadOurAppComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    FooterComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule, AngularSvgIconModule,RatingModule],
   providers: [],

@@ -1,0 +1,120 @@
+<style>
+  .footer {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .upper-footer {
+    padding-top: 198px;
+    padding-bottom: 100px;
+    background-color: #121212;
+    color: white;
+  }
+
+  .column-wrapper {
+    font-size: 16px;
+  }
+
+  .column-wrapper p {
+    padding-bottom: 7px;
+    color: #676768;
+  }
+
+  .column-wrapper p:nth-child(1) {
+    font-weight: bold;
+    color: white;
+  }
+
+  .google-play {
+    width: 265px;
+  }
+
+  .footer-logo {
+    font-size: 53px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: -14px;
+  }
+
+  svg-icon.logo {
+    bottom: -39px;
+    position: relative;
+    width: 160px;
+    left: 25px;
+  }
+
+  .lower-footer {
+    background-color: black;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .lower-footer-right {
+    display: flex;
+  }
+
+  .lower-footer-right p {
+    margin-right: 10px;
+  }
+
+  .lower-footer .row>div>div {
+    justify-content: flex-end;
+  }
+</style>
+
+<div class="footer">
+  <div class="upper-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3">
+          <a class="footer-logo" href="#">
+            <svg-icon class="logo" src="../assets/delivery-truck.svg"
+              [svgStyle]="{'width.px':150,'height.px':70,'fill':'rgb(255,255,255)','padding.px':1,'margin.px':3}">
+            </svg-icon>
+            Deliver
+          </a>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="column-wrapper">
+            <p>About Box-It</p>
+            <p>How Box-It Works</p>
+            <p>Safety</p>
+            <p>Careers</p>
+            <p>Countries</p>
+            <p>FAQs</p>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <div class="column-wrapper">
+            <p>Be a Dispatcher</p>
+            <p>Sign up to be a Dispatcher</p>
+            <p>Requirements</p>
+            <p>Driver App</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <img class="google-play" src="../../assets/google-play-badge-en.png" alt="Get it on Google Play">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lower-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="col-xs-8  lower-footer-right">
+            <p>Accessibility</p>
+            <p>Terms</p>
+          </div>
+          <div class="col-xs-4 lower-footer-left">
+            <p>&copy; BoxIt 2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

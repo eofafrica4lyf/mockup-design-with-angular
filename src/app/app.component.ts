@@ -7,10 +7,10 @@ import { StarRatingComponent } from 'ng-starrating';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  onRate($event: { oldValue: number, newValue: number, starRating: StarRatingComponent }) {
-    alert(`Old Value:${$event.oldValue}, 
-      New Value: ${$event.newValue}, 
-      Checked Color: ${$event.starRating.checkedcolor}, 
-      Unchecked Color: ${$event.starRating.uncheckedcolor}`);
-  }
+  // onRate($event: { oldValue: number, newValue: number, starRating: StarRatingComponent }) {
+  //   alert(`Old Value:${$event.oldValue}, 
+  //     New Value: ${$event.newValue}, 
+  //     Checked Color: ${$event.starRating.checkedcolor}, 
+  //     Unchecked Color: ${$event.starRating.uncheckedcolor}`);
+  // }
 }

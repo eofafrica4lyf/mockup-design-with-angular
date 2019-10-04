@@ -3,6 +3,7 @@
     position: relative;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
@@ -62,7 +63,7 @@
     <h4 class="card-text">Jollof Etcetera</h4>
     <div class="star-rating">
       <div>
-        <star-rating value="3" checkedcolor="gold" uncheckedcolor="#676768" size="18px" readonly="false"
+        <star-rating value="3" checkedcolor="gold" uncheckedcolor="black" size="18px" readonly="false"
           (rate)="onRate($event)">
         </star-rating>
       </div>

@@ -17,6 +17,7 @@ import { RatingModule } from 'ng-starrating';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { PopularRestaurantsComponent } from './popular-restaurants/popular-restaurants.component';
 import { DownloadOurAppComponent } from './download-our-app/download-our-app.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DownloadOurAppComponent } from './download-our-app/download-our-app.com
     RecommendedRestaurantComponent,
     HowItWorksComponent,
     PopularRestaurantsComponent,
-    DownloadOurAppComponent
+    DownloadOurAppComponent,
+    TestimonialsComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule, AngularSvgIconModule,RatingModule],
   providers: [],
